@@ -17,5 +17,6 @@ dependencies:
   - librosa
   - pysoundfile
   - cudatoolkit=10.1
-  - tensorflow-gpu=2.3
-  - deepspeech-gpu=0.9.3
+  - pip:
+    - tensorflow-gpu=2.3
+    - deepspeech-gpu=0.9.3
