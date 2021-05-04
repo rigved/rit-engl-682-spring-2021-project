@@ -1,0 +1,21 @@
+name: example-environment
+channels:
+  - conda-forge
+dependencies:
+  - numpy=1.8.5
+  - jupyter
+  - scikit-learn
+  - pillow
+  - future
+  - cython
+  - termcolor
+  - keras-preprocessing
+  - matplotlib
+  - seaborn
+  - scipy
+  - pycuda
+  - librosa
+  - pysoundfile
+  - cudatoolkit=10.1
+  - tensorflow-gpu=2.3
+  - deepspeech-gpu=0.9.3
