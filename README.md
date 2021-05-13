@@ -17,7 +17,7 @@ list of requirements mentioned in the [environment.yml](https://github.com/rigve
 
 ## Installation
 
-Use Anaconda to create a new environment from the provided [environment.yml](https://github.com/rigved/rit-engl-682-spring-2021-project/blob/main/environment.yml) file.
+Use Anaconda to create a new environment from the provided [environment.yml](https://github.com/rigved/rit-engl-682-spring-2021-project/blob/main/environment.yml) file. All the following sections assume that you are running the code in this Anaconda or equivalent environment.
 
 ```bash
 conda env create -f environment.yml
@@ -73,7 +73,7 @@ This step calculates Word Error Rate, Word Recognition Rate, and Sentence Error 
 
 #### Plotting metrics
 
-The [results\_plot.R](https://github.com/rigved/rit-engl-682-spring-2021-project/blob/main/results_plot.R) plots the results that are reported in [project paper](https://shieldofachilles.in/static/rit/engl_682/ENGL_682_Spring_2021_Project_by_Rigved_Rakshit_Final_Report.pdf).
+The [results\_plot.R](https://github.com/rigved/rit-engl-682-spring-2021-project/blob/main/results_plot.R) plots the results that are reported in the [project paper](https://shieldofachilles.in/static/rit/engl_682/ENGL_682_Spring_2021_Project_by_Rigved_Rakshit_Final_Report.pdf).
 
 ## Demo
 
