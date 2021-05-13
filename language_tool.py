@@ -50,7 +50,7 @@ with open(hypothesis_filename, 'r') as hypothesis_file:
 
             progress_counter += 1
 
-            if (progress_counter % 100) == 0:
+            if (progress_counter % 10) == 0:
                 print('Progress: ' + str(progress_counter) + ' instances completed')
 
 print('')

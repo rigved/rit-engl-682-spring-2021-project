@@ -51,7 +51,6 @@ Perform speech recognition:
 
 ```bash
 python deepspeech_english_inference.py data ./ validated.csv hypothesis.txt gold_standard.txt
-python deepspeech_english_inference.py modified_data ./ validated.csv preprocessed_hypothesis.txt preprocessed_gold_standard.txt
 ```
 
 This step will generate the DeepSpeech transcriptions from the original and the pre-processed voice recordings.

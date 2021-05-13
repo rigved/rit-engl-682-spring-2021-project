@@ -84,7 +84,7 @@ with open(validated_input_filename, 'r') as validated_input_csv_file:
 
         progress_counter += 1
 
-        if (progress_counter % 100) == 0:
+        if (progress_counter % 10) == 0:
             print('Progress: ' + str(progress_counter) + ' instances completed')
 
 print('')
