@@ -4,7 +4,9 @@ De-biasing Transcribed Text from Automatic Speech Recognition Systems
 
 ## Introduction
 
-This project is an attempt to correct errors in the transcribed test due to accent bias in Automatic Speech Recognition (ASR) systems.
+This project is an attempt to correct errors in the transcribed test due to accent bias in Automatic Speech Recognition (ASR) systems. The project uses Mozilla's DeepSpeech ASR system as an example. However, these techniques can be easily extended to other ASR systems.
+
+This project is part of my [RIT ENGL-682 course project](https://shieldofachilles.in/pages/rit-engl-682-project-rigved-rakshit.html).
 
 ## Prerequisites
 
@@ -60,6 +62,10 @@ wer gold_standard.txt hypothesis.txt
 ```
 
 This step calculates Word Error Rate, Word Recognition Rate, and Sentence Error Rate for the given file. Use one of the different `hypothesis` files to generate metrics for the pre-processed and post-processed outputs.
+
+#### Plotting metrics
+
+The [results\_plot.R](https://github.com/rigved/rit-engl-682-spring-2021-project/blob/main/results_plot.R) plots the results that are reported in [project paper](https://shieldofachilles.in/static/rit/engl_682/ENGL_682_Spring_2021_Project_by_Rigved_Rakshit_Final_Report.pdf).
 
 ## Demo
 
