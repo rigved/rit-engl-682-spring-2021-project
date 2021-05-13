@@ -77,7 +77,7 @@ The [results\_plot.R](https://github.com/rigved/rit-engl-682-spring-2021-project
 
 ## Demo
 
-Click this button to launch an interactive demo of this code:
+Click the following button to launch an interactive demo of this code. NOTE: The demo takes at least 30 seconds to load to the large data and Mozilla DeepSpeech model files.
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rigved/rit-engl-682-spring-2021-project/HEAD?filepath=index.ipynb)
 
