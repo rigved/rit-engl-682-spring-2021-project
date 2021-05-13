@@ -40,6 +40,15 @@ This step will perform pre-processing on all the voice recordings in the [data](
 
 ### DeepSpeech inference
 
+Download the pre-built Mozilla DeepSpeech v0.9.3 models:
+
+```bash
+curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/deepspeech-0.9.3-models.pbmm
+curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/deepspeech-0.9.3-models.scorer
+```
+
+Perform speech recognition:
+
 ```bash
 python deepspeech_english_inference.py data ./ validated.csv hypothesis.txt gold_standard.txt
 python deepspeech_english_inference.py modified_data ./ validated.csv preprocessed_hypothesis.txt preprocessed_gold_standard.txt
