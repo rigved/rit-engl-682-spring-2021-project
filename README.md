@@ -91,6 +91,16 @@ Or copy this link to your browser to launch the demo:
 
 https://mybinder.org/v2/gh/rigved/rit-engl-682-spring-2021-project/HEAD?filepath=index.ipynb
 
+## Example Output from Demo
+
+Here is an example from the demo of DeepSpeech Inference on a sample original voice recording:
+
+![DeepSpeech Inference on sample original voice recording](DeepSpeech_Inference_on_sample_original_voice_recording.jpg)
+
+Here is an example from the demo of DeepSpeech Inference on a sample louder voice recording:
+
+![DeepSpeech Inference on sample louder voice recording](DeepSpeech_Inference_on_sample_louder_voice_recording.jpg)
+
 ### Demo Setup
 
 The demo uses the [Binder](https://mybinder.org/) service to convert the [index.ipynb](https://github.com/rigved/rit-engl-682-spring-2021-project/blob/main/index.ipynb) Jupyter notebook, along with [pre-build](https://github.com/rigved/rit-engl-682-spring-2021-project/blob/main/start) and [post-build](https://github.com/rigved/rit-engl-682-spring-2021-project/blob/main/postBuild) scripts, into an interactive, Docker-based Jupyter notebook hosted in the cloud. The pre-build script enables the NVIDIA CUDA environment in the Binder Docker image. The post-build script downloads the Mozilla DeepSpeech v0.9.3 pre-built model and scorer files. These files are too large to fit within GitHub's filesize restrictions and are not included in this GitHub repo. The Binder service uses the [environment.yml](https://github.com/rigved/rit-engl-682-spring-2021-project/blob/main/environment.yml) file to setup the Anaconda environment inside the Binder Docker image.
