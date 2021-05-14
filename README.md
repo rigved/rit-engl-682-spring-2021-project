@@ -15,6 +15,8 @@ The code runs faster when using a CUDA-supported GPU with compute capability >= 
 However, the code will run just fine without any GPU. In this case, modify the 
 list of requirements mentioned in the [environment.yml](https://github.com/rigved/rit-engl-682-spring-2021-project/blob/main/environment.yml) file and replace "tensorflow-gpu" with "tensorflow" and "deepspeech-gpu" with "deepspeech".
 
+The project uses Mozilla's pre-built English DeepSpeech model and scorer files. The [DeepSpeech inference](https://github.com/rigved/rit-engl-682-spring-2021-project#deepspeech-inference) section below details how to retrieve those files.
+
 ## Installation
 
 Use Anaconda to create a new environment from the provided [environment.yml](https://github.com/rigved/rit-engl-682-spring-2021-project/blob/main/environment.yml) file. All the following sections assume that you are running the code in this Anaconda or equivalent environment.
@@ -42,11 +44,11 @@ mkdir -p modified_data
 python audio_preprocessing.py data modified_data validated.csv
 ```
 
-This step will perform pre-processing on all the voice recordings in the [data](https://github.com/rigved/rit-engl-682-spring-2021-project/tree/main/data) directory and store the modified clips in the `modified_data` directory.
+This step will perform pre-processing on all the voice recordings in the [data](https://github.com/rigved/rit-engl-682-spring-2021-project/tree/main/data) directory and stores these modified clips in the `modified_data` directory.
 
 ### DeepSpeech inference
 
-Download the pre-built Mozilla DeepSpeech v0.9.3 models:
+Download the pre-built Mozilla DeepSpeech v0.9.3 models that are used by the remaining sections:
 
 ```bash
 curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/deepspeech-0.9.3-models.pbmm
