@@ -23,7 +23,7 @@ Use Anaconda to create a new environment from the provided [environment.yml](htt
 conda env create -f environment.yml
 ```
 
-In case you get a `ResolvePackageNotFound` failure while setting up the Anaconda environment, use the following alternate environment file that contain no build information.
+In case you get a `ResolvePackageNotFound` failure while setting up the Anaconda environment, use the following alternate environment file that contains no build information.
 
 ```bash
 conda env create -f environment_no_builds.yml
@@ -32,7 +32,7 @@ conda env create -f environment_no_builds.yml
 ## Usage
 
 - The code has been set up such that you can split the `validated.csv` file into multiple smaller files and process them in parallel.
-- This way, you can run multiple instances of the code to maximize resources. For example, you use one `validated.csv` file in a CUDA-enabled `conda` environment and another `validated.csv` file in a non-GPU `conda` environment. This will utilize the GPU and all the CPUs on the machine.
+- This way, you can run multiple instances of the code to maximize resources. For example, you use one `validated.csv` file in a CUDA-enabled `conda` environment and another `validated.csv` file in a non-GPU `conda` environment. This process will help utilize the GPU and all the CPUs on the machine.
 - Run the following commands in your newly created `deepspeech` Anaconda environment.
 
 ### Audio pre-processing to generate time-stretched, pitch-shifted, and volume-augmented audio files
@@ -93,7 +93,7 @@ https://mybinder.org/v2/gh/rigved/rit-engl-682-spring-2021-project/HEAD?filepath
 
 ### Demo Setup
 
-The demo uses the [Binder](https://mybinder.org/) service to convert the [index.ipynb](https://github.com/rigved/rit-engl-682-spring-2021-project/blob/main/index.ipynb) Jupyter notebook, along with [pre-build](https://github.com/rigved/rit-engl-682-spring-2021-project/blob/main/start) and [post-build](https://github.com/rigved/rit-engl-682-spring-2021-project/blob/main/postBuild) scripts, into an interactive, Docker-based Jupyter notebook hosted in the cloud. The pre-build script enables the NVIDIA CUDA environment in the Binder Docker image. The post-build script downloads the Mozilla DeepSpeech v0.9.3 pre-built model and scorer files. These files are too large to fit within GitHub's filesize restrictions. The Binder service uses the [environment.yml](https://github.com/rigved/rit-engl-682-spring-2021-project/blob/main/environment.yml) file to setup the Anaconda environment inside the Binder Docker image.
+The demo uses the [Binder](https://mybinder.org/) service to convert the [index.ipynb](https://github.com/rigved/rit-engl-682-spring-2021-project/blob/main/index.ipynb) Jupyter notebook, along with [pre-build](https://github.com/rigved/rit-engl-682-spring-2021-project/blob/main/start) and [post-build](https://github.com/rigved/rit-engl-682-spring-2021-project/blob/main/postBuild) scripts, into an interactive, Docker-based Jupyter notebook hosted in the cloud. The pre-build script enables the NVIDIA CUDA environment in the Binder Docker image. The post-build script downloads the Mozilla DeepSpeech v0.9.3 pre-built model and scorer files. These files are too large to fit within GitHub's filesize restrictions and are not included in this GitHub repo. The Binder service uses the [environment.yml](https://github.com/rigved/rit-engl-682-spring-2021-project/blob/main/environment.yml) file to setup the Anaconda environment inside the Binder Docker image.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
