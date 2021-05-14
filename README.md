@@ -23,6 +23,12 @@ Use Anaconda to create a new environment from the provided [environment.yml](htt
 conda env create -f environment.yml
 ```
 
+In case you get a `ResolvePackageNotFound` failure while setting up the Anaconda environment, use the following alternate environment file that contain no build information.
+
+```bash
+conda env create -f environment_no_builds.yml
+```
+
 ## Usage
 
 - The code has been set up such that you can split the `validated.csv` file into multiple smaller files and process them in parallel.
